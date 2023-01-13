@@ -8,22 +8,24 @@ namespace Gestran.Forncecedor.API.Configurations
     {
         public static IServiceCollection AddSwaggerConfiguration(this IServiceCollection services)
         {
+            services.AddEndpointsApiExplorer();
+
             services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-                {
-                    Title = "Gestran API Fornecedor",
-                    Version = "v1",
-                    Description = "Essa API faz parte do teste da Gestran para Desenvedor backend e fornece o cadastro de fornecedores",
-                    Contact = new OpenApiContact
-                    {
-                        Name = "André Luís da Cunha",
-                        Email = "andre.l.cunha@live.com",
-                        Url = new Uri("https://github.com/andrelcunha")
-                    },
-                    License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
-                });
-            });
+                     {
+                         c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                         {
+                             Title = "Gestran API Fornecedor",
+                             Version = "v1",
+                             Description = "Essa API faz parte do teste da Gestran para Desenvedor backend e fornece o cadastro de fornecedores",
+                             Contact = new OpenApiContact
+                             {
+                                 Name = "André Luís da Cunha",
+                                 Email = "andre.l.cunha@live.com",
+                                 Url = new Uri("https://github.com/andrelcunha")
+                             },
+                             License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
+                         });
+                     });
             return services;
         }
 
