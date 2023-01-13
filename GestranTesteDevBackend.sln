@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{83F6521A-930E-4F21-B833-516AED29792F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestran.Forncecedor.API", "src\services\Gestran.Forncecedor.API\Gestran.Forncecedor.API.csproj", "{2B020A6D-71B9-4765-9EC9-D68DA0DB1622}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B020A6D-71B9-4765-9EC9-D68DA0DB1622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B020A6D-71B9-4765-9EC9-D68DA0DB1622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B020A6D-71B9-4765-9EC9-D68DA0DB1622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B020A6D-71B9-4765-9EC9-D68DA0DB1622}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B020A6D-71B9-4765-9EC9-D68DA0DB1622} = {83F6521A-930E-4F21-B833-516AED29792F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD9F4F5C-EDBF-4038-91CB-AC95152AAC8D}
