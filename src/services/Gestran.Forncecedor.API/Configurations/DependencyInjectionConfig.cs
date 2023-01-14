@@ -6,7 +6,7 @@ namespace Gestran.Forncecedor.API.Configurations
     {
         public static void RegisterServices(this IServiceCollection services)
         {
-            services.AddScoped<FornecedorContext>();
+            services.AddScoped<ContextoPrincipal>();
         }
     }
 }

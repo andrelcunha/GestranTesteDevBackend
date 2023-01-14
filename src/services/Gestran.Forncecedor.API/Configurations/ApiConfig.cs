@@ -8,7 +8,7 @@ namespace Gestran.Forncecedor.API.Configurations
 
         public static IServiceCollection AddApiConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<FornecedorContext>(options =>
+            services.AddDbContext<ContextoPrincipal>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();

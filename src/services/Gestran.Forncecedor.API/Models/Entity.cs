@@ -1,7 +1,15 @@
-﻿namespace Gestran.Forncecedor.API.Models
+﻿using Swashbuckle.AspNetCore.Annotations;
+
+namespace Gestran.Forncecedor.API.Models
 {
     public abstract class Entity
     {
-        protected Guid Id { get; set; }
+        [SwaggerSchema(ReadOnly = true)]
+        public Guid Id { get; set; }
+
+        protected Entity()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

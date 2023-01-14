@@ -25,6 +25,9 @@ namespace Gestran.Forncecedor.API.Configurations
                              },
                              License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
                          });
+                         c.EnableAnnotations();
+
+
                      });
             return services;
         }
